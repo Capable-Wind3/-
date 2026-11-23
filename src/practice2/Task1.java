@@ -9,7 +9,6 @@ public class Task1 {
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
 
-            //Валидация введённых данных
             if (n <= 0) {
                 System.out.println("Ошибка: N должно быть натуральным числом (больше 0).");
             } else {

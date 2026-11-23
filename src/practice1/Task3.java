@@ -1,6 +1,7 @@
-package practice1;
+package src.practice1;
 
 import java.util.Scanner;
+
 public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,13 +16,24 @@ public class Task3 {
 
         int[] numbers = {a, b, c};
 
-        for (int num : numbers) {
-            if (num > 0) {
-                positive++;
-            } else if (num < 0) {
-                negative++;
-            }
+        if (numbers[0] > 0) {
+            positive++;
+        } else if (numbers[0] <0 ){
+            negative++;
         }
+
+        if (numbers[1] > 0) {
+            positive++;
+        } else if (numbers[1] <0){
+            negative++;
+        }
+
+        if (numbers[2] > 0) {
+            positive++;
+        } else if (numbers[2] <0){
+            negative++;
+        }
+
         System.out.print("Положительных: " + positive + ", отрицательных: " + negative + ": ");
     }
 }

@@ -1,4 +1,4 @@
-package practice2;
+package src.practice2;
 
 import java.util.Scanner;
 public class Task4 {
@@ -11,13 +11,18 @@ public class Task4 {
             return;
         }
         int n = scanner.nextInt();
-        Task4 myTriangle = new Task4();
-        myTriangle.printCalculations(n);
+
+        if (n <= 0){
+            System.out.print("Ошибка: введённое значение должно быть больше чем 0");
+            return;
+        }
+
+        printCalculations(n);
     }
-    // Метод для вывода результатов вычислений
-    public void printCalculations(double side) {
+
+    public static void printCalculations(double side) {
         double p = 3 * side;
-        double s = (side * side * Math.sqrt(3)) / 4;
+        double s = (Math.pow(side, 2) * Math.sqrt(3)) / 4;
 
         System.out.println("Для треугольника со стороной " + side + ":");
         System.out.println("Периметр = " + p);

@@ -32,8 +32,7 @@ public class Task2 {
             currentTerm = currentTerm * x / (i + 1);
         }
 
-        System.out.printf("Значение выражения: %.6f%n", sum);
-        System.out.printf("Значение Math.exp(X): %.6f%n", Math.exp(x));
+        System.out.printf("Значение выражения: %.6f%n", Math.exp(x));
 
         scanner.close();
     }

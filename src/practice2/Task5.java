@@ -10,7 +10,7 @@ public class Task5 {
         while (running) {
             printMainMenu();
             String choice = scanner.nextLine().trim();
-
+//поменять синтаксис switch
             switch (choice) {
                 case "1":
                     performCalculation();
