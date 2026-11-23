@@ -10,23 +10,16 @@ public class Task5 {
         while (running) {
             printMainMenu();
             String choice = scanner.nextLine().trim();
-//поменять синтаксис switch
+
             switch (choice) {
-                case "1":
-                    performCalculation();
-                    break;
-                case "2":
-                    printProgramInfo();
-                    break;
-                case "3":
-                    printDeveloperInfo();
-                    break;
-                case "0":
+                case "1" -> performCalculation();
+                case "2" -> printProgramInfo();
+                case "3" -> printDeveloperInfo();
+                case "0" -> {
                     System.out.println("Выход из программы. До свидания!");
                     running = false;
-                    break;
-                default:
-                    System.out.println("ОШИБКА: неверный пункт меню. Попробуйте снова.\n");
+                }
+                default -> System.out.println("ОШИБКА: неверный пункт меню. Попробуйте снова.\n");
             }
         }
 
